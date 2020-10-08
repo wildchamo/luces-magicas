@@ -17,7 +17,9 @@
             <img  id ="texturacaja" src="cositas/moraug.jpg">
         </a-assets>
         <a-camera position="-3 1 0" ></a-camera>
-        <a-tetrahedron position="1 1 1" color="blue" radius ="3" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-tetrahedron>
+        <a-tetrahedron position="1 1 1" color="blue" radius ="3" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
+            <a-sphere position="4 1 1" animation="property:rotation;to:0 360 0; loop:true;dur:10000"></a-sphere>
+        </a-tetrahedron>
         <a-box position="4 1 1 " animation="property:position "></a-box>
         <a-plane color="black" height="10" width="10" rotation="-90 0 0" ></a-plane>
         <a-light type="spot" color="red" intensity="100" position="1 1 -6" angle= "45" rotation="0 180 0"></a-light>
