@@ -12,12 +12,13 @@
 
         <img id="sky" color="blue">
         <a-sky src="#sky"></a-sky>
+        <a-entity id="mouseCursor" cursor="rayOrigin: mouse"></a-entity>
 
         <a-assets>
             <img  id ="texturacaja" src="cositas/moraug.jpg">
         </a-assets>
         <a-camera position="-3 1 0" ></a-camera>
-        <a-tetrahedron position="1 1 1" color="blue" radius ="3" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
+        <a-tetrahedron position="1 1 1" color="blue" radius ="3"  animation__mouseenter="property: rotation; to: 0 360 0; loop: true; dur: 10000;startEvents: mouseenter;pauseEvents:mouseleave">
             <a-sphere position="4 1 1" animation="property:rotation;to:0 360 0; loop:true;dur:10000"></a-sphere>
         </a-tetrahedron>
         <a-box position="4 1 1 " animation="property:position "></a-box>
